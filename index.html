@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Formulario de Envío</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div class="form-container">
+    <h1>Formulario de Envío</h1>
+    <form id="formulario"
+      action="https://script.google.com/macros/s/AKfycbz0VyCHbE7Sl3TkJ3a3FNqd2DX52DbP1JFi8mf5Zn4mRtbW7ZteCsUCW0GLP0BKWf0c/exec"
+      method="POST">
+      <!-- Campo ID automático -->
+      <input type="hidden" name="idpermiso" id="idpermiso" value="">
+
+      <label for="nombre">Nombre y Apellido</label>
+      <input type="text" id="nombre" name="nombre" required>
+
+      <label for="empresa">Empresa</label>
+      <input type="text" id="empresa" name="empresa" required>
+
+      <label for="fecha_permiso">Fecha de Permiso</label>
+      <input type="date" id="fecha_permiso" name="fecha_permiso" required>
+
+      <label for="fecha_permiso2">Fecha de Permiso 2 (Opcional)</label>
+      <input type="date" id="fecha_permiso2" name="fecha_permiso2">
+
+      <input type="hidden" name="fecha_solicitud" id="fecha_solicitud" value="">
+
+      <input type="submit" value="Enviar Datos">
+    </form>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
